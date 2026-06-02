@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colonial Massages | Norfolk, VA</title>
+
+  <style>
+    :root {
+      --navy: #0b1c2d;
+      --blue: #1f4f7a;
+      --sea: #4fa3c7;
+      --sand: #f5f7f9;
+      --accent: #caa86b;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--sand);
+      color: var(--navy);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(
+        rgba(11, 28, 45, 0.7),
+        rgba(11, 28, 45, 0.7)
+      ),
+      url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .info-box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .info-box h3 {
+      margin-top: 0;
+      color: var(--blue);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      border-top: 6px solid var(--sea);
+    }
+
+    .service-card h3 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    .service-card span {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--blue);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .cta {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 20px;
+    }
+
+    .cta h2 {
+      border: none;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 40px;
+      background: var(--accent);
+      color: var(--navy);
+      border-radius: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Colonial Massages</h1>
+  <p>Take Off Into Relaxation — Norfolk, Virginia</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Welcome Aboard</h2>
+    <p>
+      Located near the Norfolk waterfront, Colonial Massages offers a refined,
+      airline-inspired experience designed for travelers, professionals, and
+      locals seeking first-class relaxation.
+    </p>
+  </section>
+
+  <section>
+    <h2>Terminal Information</h2>
+    <div class="info-grid">
+      <div class="info-box">
+        <h3>Location</h3>
+        <p>628 Rhode Island Ave<br/>Norfolk, VA 23208</p>
+      </div>
+      <div class="info-box">
+        <h3>Contact</h3>
+        <p>
+          Phone: 423-432-0264<br/>
+          Email: <a href="mailto:blakeraleigh1@gmail.com">blakeraleigh1@gmail.com</a>
+        </p>
+      </div>
+      <div class="info-box">
+        <h3>Experience</h3>
+        <p>
+          Aviation professionalism meets coastal calm.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>In-Flight Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <span>First Class</span>
+        <h3>Swedish Massage</h3>
+      </div>
+      <div class="service-card">
+        <span>Crew Favorite</span>
+        <h3>Deep Tissue Massage</h3>
+      </div>
+      <div class="service-card">
+        <span>Signature</span>
+        <h3>Hot Stone Massage</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Now Boarding</h2>
+    <p>Reserve your session today.</p>
+    <a href="mailto:blakeraleigh1@gmail.com">Book Appointment</a>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 Colonial Massages • Norfolk, VA
+</footer>
+
+</body>
+</html>
