@@ -1,226 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Colonial Massages | Norfolk, VA</title>
-
-  <style>
-    :root {
-      --navy: #0b1c2d;
-      --blue: #1f4f7a;
-      --sea: #4fa3c7;
-      --sand: #f5f7f9;
-      --accent: #caa86b;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: var(--sand);
-      color: var(--navy);
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(
-        rgba(11, 28, 45, 0.7),
-        rgba(11, 28, 45, 0.7)
-      ),
-      url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      font-style: italic;
-      opacity: 0.9;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-
-    section {
-      margin-bottom: 60px;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      border-bottom: 2px solid var(--accent);
-      display: inline-block;
-      padding-bottom: 5px;
-    }
-
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .info-box {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    }
-
-    .info-box h3 {
-      margin-top: 0;
-      color: var(--blue);
-    }
-
-    a {
-      color: var(--blue);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-    }
-
-    .service-card {
-      background: white;
-      border-radius: 16px;
-      padding: 30px;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-      border-top: 6px solid var(--sea);
-    }
-
-    .service-card h3 {
-      margin-top: 0;
-      color: var(--navy);
-    }
-
-    .service-card span {
-      display: block;
-      font-size: 0.9rem;
-      color: var(--blue);
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .cta {
-      background: var(--navy);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-      border-radius: 20px;
-    }
-
-    .cta h2 {
-      border: none;
-      color: white;
-      margin-bottom: 15px;
-    }
-
-    .cta a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 40px;
-      background: var(--accent);
-      color: var(--navy);
-      border-radius: 30px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flying Solo Group — Seacoast Village Project</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #00379f; --green: #1D9E75; --green-light: #E1F5EE;
+    --cream: #FDFAF5; --text: #1a1a2e; --muted: #5a6272;
+    --border: #e2e8f0; --white: #ffffff;
+  }
+  body { font-family: 'Source Sans 3', sans-serif; background: var(--cream); color: var(--text); min-width: 0; overflow-x: hidden; }
+  html { overflow-x: hidden; min-width: 0; }
+  .header { background: var(--navy); padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1.25rem; }
+  .header-text .tag { display: inline-block; background: rgba(29,158,117,0.25); color: #7EEDC8; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; padding: 3px 12px; border-radius: 20px; font-weight: 600; margin-bottom: 0.4rem; }
+  .header-text h1 { font-family: 'Playfair Display', serif; color: white; font-size: 1.5rem; font-weight: 700; line-height: 1.2; }
+  .main { max-width: 780px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+  .how-it-works { background: var(--green-light); border-left: 4px solid var(--green); border-radius: 0 10px 10px 0; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .how-it-works h2 { font-size: 13px; font-weight: 700; color: #0F6E56; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.6rem; }
+  .how-it-works ol { padding-left: 1.2rem; }
+  .how-it-works li { font-size: 13.5px; color: #1a4a3a; line-height: 1.6; margin-bottom: 2px; }
+  .how-it-works .note { font-size: 12px; color: #0F6E56; margin-top: 0.6rem; font-style: italic; }
+  .add-bar { background: white; border: 2px dashed var(--green); border-radius: 12px; padding: 1rem 1.25rem; text-align: center; margin-bottom: 1.5rem; }
+  .add-bar a { color: var(--green); font-weight: 600; font-size: 14px; text-decoration: none; }
+  .add-bar a:hover { text-decoration: underline; }
+  .add-bar p { font-size: 12.5px; color: var(--muted); margin-top: 4px; }
+  .section-label { font-size: 10.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.75rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border); }
+  .search-bar { position: relative; margin-bottom: 1rem; }
+  .search-bar input { width: 100%; padding: 0.7rem 1rem 0.7rem 2.5rem; border: 1.5px solid var(--border); border-radius: 10px; font-size: 16px; font-family: 'Source Sans 3', sans-serif; background: white; color: var(--text); outline: none; transition: border-color 0.2s; }
+  .search-bar input:focus { border-color: var(--navy); }
+  .search-icon { position: absolute; left: 0.75rem; top: 50%; transform: translateY(-50%); color: var(--muted); }
+  .count { font-size: 13px; color: var(--muted); margin-bottom: 1rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 0.85rem; }
+  .card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.15rem; transition: box-shadow 0.2s, transform 0.2s; }
+  .card:hover { box-shadow: 0 4px 20px rgba(0,55,159,0.10); transform: translateY(-2px); }
+  .card-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+  .avatar { width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0; font-family: 'Playfair Display', serif; }
+  .card-name { font-size: 15px; font-weight: 700; color: var(--text); }
+  .card-town { font-size: 12px; color: var(--muted); }
+  .card-body { font-size: 13px; color: var(--muted); line-height: 1.55; }
+  .card-row { display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.4rem; }
+  .card-row span.label { min-width: 16px; }
+  .card-row a { color: var(--navy); text-decoration: none; word-break: break-all; }
+  .card-row a:hover { text-decoration: underline; }
+  .card-row .plain { color: var(--text); font-size: 13px; }
+  .interests { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 0.6rem; }
+  .tag-pill { background: var(--green-light); color: #0F6E56; font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 600; }
+  .drives-yes { background: #EEF3FF; color: var(--navy); font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 600; }
+  .hidden { display: none !important; }
+  .loading { text-align: center; padding: 2rem; color: var(--muted); font-size: 14px; }
+  .error { background: #fff0f0; border: 1px solid #ffcccc; border-radius: 10px; padding: 1rem; text-align: center; color: #c0392b; font-size: 14px; }
+  .footer { text-align: center; padding: 1.5rem 1rem 2rem; font-size: 12px; color: var(--muted); }
+  .footer a { color: var(--navy); text-decoration: none; }
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+    .header { padding: 1rem; }
+    .header-text h1 { font-size: 1.2rem; }
+    .main { padding: 1rem 0.85rem 2rem; }
+    .card { padding: 0.85rem 1rem; }
+  }
+</style>
 </head>
-
 <body>
 
-<header>
-  <h1>Colonial Massages</h1>
-  <p>Take Off Into Relaxation — Norfolk, Virginia</p>
-</header>
+<div class="header">
+  <div class="header-text">
+    <div class="tag">Seacoast Village Project</div>
+    <h1>✈️ Flying Solo Group</h1>
+  </div>
+</div>
 
-<main>
+<div class="main">
 
-  <section>
-    <h2>Welcome Aboard</h2>
-    <p>
-      Located near the Norfolk waterfront, Colonial Massages offers a refined,
-      airline-inspired experience designed for travelers, professionals, and
-      locals seeking first-class relaxation.
-    </p>
-  </section>
+  <div class="how-it-works">
+    <h2>How it works</h2>
+    <ol>
+      <li>Fill out the form below to add yourself to the directory.</li>
+      <li>Your info will appear in the directory within 24 hours.</li>
+      <li>Browse the directory to find members who share your interests.</li>
+      <li>Reach out directly to arrange outings, lunches, or activities.</li>
+      <li>Enjoy connecting, making new friends, and renewing old friendships!</li>
+    </ol>
+    <p class="note">* Your contact information will only be shared with registered Flying Solo members.</p>
+  </div>
 
-  <section>
-    <h2>Terminal Information</h2>
-    <div class="info-grid">
-      <div class="info-box">
-        <h3>Location</h3>
-        <p>628 Rhode Island Ave<br/>Norfolk, VA 23208</p>
+  <div class="add-bar">
+    <a href="https://docs.google.com/forms/d/1Vy-ss55rVt6z227O6AnkHXnYOzH3KGmChLaEuLY0suo/viewform" target="_blank">➕ Add yourself to the group</a>
+    <p>Click above to register and share your contact info and interests</p>
+  </div>
+
+  <div class="section-label">Members</div>
+  <div class="search-bar">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="Search by name, town, or interest..." oninput="filterCards()">
+  </div>
+  <p class="count" id="count">Loading members...</p>
+  <div class="grid" id="grid"><div class="loading">Loading directory...</div></div>
+
+</div>
+
+<div class="footer">
+  Questions? Contact <a href="mailto:dylan@seacoastvillageproject.org">Dylan</a> &nbsp;·&nbsp;
+  <a href="https://seacoast.helpfulvillage.com" target="_blank">seacoast.helpfulvillage.com</a>
+</div>
+
+<script>
+const DIRECTORY_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSqZ3BqLm0xtZYVHmQtdHoWCShq2inoIj1UIOpj18U4n3hA6DngAN1jR8lhGSEZWSisGJYxf0LXIsKw/pub?gid=559879976&single=true&output=csv';
+const COLORS = ['#00379f','#1D9E75','#7B4F9E','#C0392B','#E8A020','#16A085','#8E44AD','#2980B9','#27AE60','#D35400'];
+
+function getColor(name) {
+  let hash = 0;
+  for (let c of name) hash = (hash + c.charCodeAt(0)) % COLORS.length;
+  return COLORS[hash];
+}
+
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  const headers = lines[0].split(',').map(h => h.replace(/"/g, '').trim());
+  return lines.slice(1).map(line => {
+    const vals = [];
+    let cur = '', inQ = false;
+    for (let ch of line) {
+      if (ch === '"') inQ = !inQ;
+      else if (ch === ',' && !inQ) { vals.push(cur.trim()); cur = ''; }
+      else cur += ch;
+    }
+    vals.push(cur.trim());
+    const obj = {};
+    headers.forEach((h, i) => obj[h] = (vals[i] || '').replace(/"/g, '').trim());
+    return obj;
+  });
+}
+
+function getField(row, ...keys) {
+  for (const k of keys) {
+    for (const rk of Object.keys(row)) {
+      if (rk.toLowerCase().includes(k.toLowerCase()) && row[rk]) return row[rk];
+    }
+  }
+  return '';
+}
+
+function makeCard(row) {
+  // Log raw row so we can debug column names
+  const name = getField(row, 'name');
+  const phone = getField(row, 'phone');
+  const town = getField(row, 'town', 'city');
+  const interests = getField(row, 'interest', 'activit');
+  const times = getField(row, 'time', 'day', 'avail', 'prefer');
+  const drives = getField(row, 'drive');
+  const email = getField(row, 'email');
+  const notes = getField(row, 'note', 'comment');
+
+  if (!name) return null;
+
+  const initial = name.trim()[0].toUpperCase();
+  const color = getColor(name);
+  const searchText = [name, town, interests, email, phone].join(' ').toLowerCase();
+
+  // Format phone for display — keep original formatting
+  const phoneDisplay = phone;
+  const phoneTel = phone.replace(/\D/g, '');
+
+  const interestTags = interests
+    ? interests.split(/[,;]+/).map(i => i.trim()).filter(Boolean)
+        .map(i => `<span class="tag-pill">${i}</span>`).join('')
+    : '';
+  const drivesBadge = drives && drives.toLowerCase().startsWith('y')
+    ? '<span class="drives-yes">🚗 Drives</span>' : '';
+
+  return `
+    <div class="card" data-search="${searchText}">
+      <div class="card-header">
+        <div class="avatar" style="background:${color};">${initial}</div>
+        <div>
+          <div class="card-name">${name}</div>
+          <div class="card-town">${town ? '📍 ' + town : ''}</div>
+        </div>
       </div>
-      <div class="info-box">
-        <h3>Contact</h3>
-        <p>
-          Phone: 423-432-0264<br/>
-          Email: <a href="mailto:blakeraleigh1@gmail.com">blakeraleigh1@gmail.com</a>
-        </p>
+      <div class="card-body">
+        ${phoneDisplay ? `<div class="card-row"><span class="label">📞</span><a href="tel:${phoneTel}">${phoneDisplay}</a></div>` : ''}
+        ${email && email.includes('@') ? `<div class="card-row"><span class="label">✉️</span><a href="mailto:${email}">${email}</a></div>` : ''}
+        ${times ? `<div class="card-row"><span class="label">🕐</span><span class="plain">${times}</span></div>` : ''}
+        ${notes ? `<div class="card-row"><span class="label">📝</span><span class="plain">${notes}</span></div>` : ''}
+        <div class="interests">${interestTags}${drivesBadge}</div>
       </div>
-      <div class="info-box">
-        <h3>Experience</h3>
-        <p>
-          Aviation professionalism meets coastal calm.
-        </p>
-      </div>
-    </div>
-  </section>
+    </div>`;
+}
 
-  <section>
-    <h2>In-Flight Services</h2>
-    <div class="services">
-      <div class="service-card">
-        <span>First Class</span>
-        <h3>Swedish Massage</h3>
-      </div>
-      <div class="service-card">
-        <span>Crew Favorite</span>
-        <h3>Deep Tissue Massage</h3>
-      </div>
-      <div class="service-card">
-        <span>Signature</span>
-        <h3>Hot Stone Massage</h3>
-      </div>
-    </div>
-  </section>
+function filterCards() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  const cards = document.querySelectorAll('.card');
+  let count = 0;
+  cards.forEach(card => {
+    const match = card.getAttribute('data-search').includes(q);
+    card.classList.toggle('hidden', !match);
+    if (match) count++;
+  });
+  document.getElementById('count').textContent = count + ' member' + (count !== 1 ? 's' : '') + (q ? ` matching "${q}"` : '');
+}
 
-  <section class="cta">
-    <h2>Now Boarding</h2>
-    <p>Reserve your session today.</p>
-    <a href="mailto:blakeraleigh1@gmail.com">Book Appointment</a>
-  </section>
+async function loadMembers() {
+  try {
+    const res = await fetch(DIRECTORY_CSV);
+    if (!res.ok) throw new Error();
+    const text = await res.text();
+    const rows = parseCSV(text);
+    // Debug: log headers and first row
+    console.log('Headers:', Object.keys(rows[0]));
+    console.log('First row:', rows[0]);
+    const grid = document.getElementById('grid');
+    const cards = rows.map(makeCard).filter(Boolean);
+    grid.innerHTML = cards.length ? cards.join('') : '<div class="loading">No members found yet.</div>';
+    document.getElementById('count').textContent = cards.length + ' member' + (cards.length !== 1 ? 's' : '');
+  } catch(e) {
+    console.error(e);
+    document.getElementById('grid').innerHTML = '<div class="error">Could not load the member directory. Please try refreshing.</div>';
+    document.getElementById('count').textContent = '';
+  }
+}
 
-</main>
+loadMembers();
+</script>
 
-<footer>
-  © 2025 Colonial Massages • Norfolk, VA
-</footer>
+<script>
+// Auto-resize for Google Sites iframe embed
+function sendHeight() {
+  const height = document.body.scrollHeight;
+  window.parent.postMessage({ type: 'setHeight', height: height }, '*');
+}
+
+// Send height on load and whenever content changes
+window.addEventListener('load', sendHeight);
+new MutationObserver(sendHeight).observe(document.body, { childList: true, subtree: true, attributes: true });
+window.addEventListener('resize', sendHeight);
+</script>
 
 </body>
 </html>
